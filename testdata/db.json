@@ -1,0 +1,238 @@
+{
+  "states": {
+    "Teams": [
+      {
+        "id": 2,
+        "name": "Jeux À Volonté",
+        "min": 20,
+        "max": 50,
+        "description": "Aux Jeux à Volonté, 500 jeux appartenant à l'association sont en libre service. La liste de ces jeux sera accessible sur le site force Orange. Il est indispensable de connaître au moins 40 jeux, car tu conseilleras un groupe de visiteurs pour choisir un jeu, avant d’en expliquer les règles.",
+        "before": "",
+        "during": "",
+        "after": "",
+        "status": "active",
+        "order": "6"
+      }
+    ],
+    "Games": [
+      {
+        "id": 5,
+        "title": "6 qui prend!",
+        "playersMin": 2,
+        "playersMax": 10,
+        "duration": 45,
+        "type": "Ambiance",
+        "poufpaf": "0-9-2/6-qui-prend-6-nimmt",
+        "bggId": 432,
+        "ean": 3421272101313,
+        "bggPhoto": "https://cf.geekdo-images.com/thumb/img/lzczxR5cw7an7tRWeHdOrRtLyes=/fit-in/200x150/pic772547.jpg"
+      }
+    ],
+    "Boxes": [
+      {
+        "id": 432,
+        "gameId": 31,
+        "container": "Ambiance 02",
+        "unplayable": false,
+        "missingParts": ""
+      }
+    ],
+    "Volunteers": [
+      {
+        "id": 37,
+        "firstname": "Paul",
+        "lastname": "Dupont",
+        "email": "paul.dupont@example.com",
+        "mobile": "06 12 34 56 78",
+        "photo": "paul_dupont.jpg",
+        "adult": 1,
+        "roles": [],
+        "active": "oui",
+        "discordId": "",
+        "dayWishes": [
+          "S",
+          "D"
+        ],
+        "dayWishesComment": "",
+        "tshirtCount": 2,
+        "tshirtSize": "M",
+        "food": "",
+        "team": 9,
+        "teamWishes": [
+          9,
+          28,
+          1
+        ],
+        "teamWishesComment": "",
+        "howToContact": "",
+        "canHelpBefore": "",
+        "pelMember": false,
+        "hiddenAsks": [
+          2,
+          1,
+          10,
+          11,
+          12,
+          99
+        ],
+        "created": "1969-12-31T23:00:00.000Z",
+        "password1": "$2y$1a$Kt/FAKEFAKEFAKEFAKEc6.FAKEFAKEFAKEFAKE//FAKEFAKEFAKEy",
+        "password2": "$2y$1a$Kt/FAKEFAKEFAKEFAKEc6.FAKEFAKEFAKEFAKE//FAKEFAKEFAKEy",
+        "pushNotifSubscription": "",
+        "acceptsNotifs": "",
+        "ok": [
+          7,
+          27,
+          123,
+          146,
+          214,
+          276,
+          286,
+          342,
+          343,
+          368,
+          525,
+          567,
+          584,
+          803,
+          839,
+          877,
+          885
+        ],
+        "bof": [
+          24,
+          374,
+          474,
+          753,
+          761,
+          770
+        ],
+        "niet": [
+          9,
+          11,
+          12,
+          16,
+          23,
+          24
+        ],
+        "needsHosting": false,
+        "canHostCount": 0,
+        "distanceToFestival": 0,
+        "hostingComment": "",
+        "meals": [
+          "P",
+          "P",
+          "P"
+        ]
+      }
+    ]
+  },
+  "types": {
+    "Teams": {
+      "id": "number",
+      "nom": "string",
+      "min": "number",
+      "max": "number",
+      "description": "string",
+      "avant": "string",
+      "pendant": "string",
+      "après": "string",
+      "statut": "string",
+      "ordre": "string"
+    },
+    "Announcements": {
+      "id": "number",
+      "type": "string",
+      "titre": "string",
+      "url": "string",
+      "informéAvecUneNotif": "boolean"
+    },
+    "Postulants": {
+      "id": "number",
+      "prenom": "string",
+      "nom": "string",
+      "email": "string",
+      "telephone": "string",
+      "commentContacter": "string",
+      "potentiel": "boolean",
+      "déjàVenu": "boolean",
+      "dateRencontre": "string",
+      "commentaireDateRencontre": "string",
+      "commentaire": "string"
+    },
+    "Wishes": {
+      "id": "number",
+      "domaine": "string",
+      "precisions": "string",
+      "equipes": "string[, ]",
+      "dateAjout": "date"
+    },
+    "Miscs": {
+      "id": "number",
+      "rencontreId": "string",
+      "rencontreTitre": "string",
+      "rencontreUrl": "string",
+      "invitationDiscord": "string"
+    },
+    "Games": {
+      "id": "number",
+      "titre": "string",
+      "minJoueurs": "number",
+      "maxJoueurs": "number",
+      "duree": "number",
+      "type": "string",
+      "poufpaf": "string",
+      "bggId": "number",
+      "ean": "number",
+      "bggPhoto": "string"
+    },
+    "Boxes": {
+      "id": "number",
+      "jeuId": "number",
+      "caisse": "string",
+      "injouable": "boolean",
+      "eanSpécifique": "number",
+      "partiesManquantes": "string",
+      "verifié": "date"
+    },
+    "Volunteers": {
+      "id": "number",
+      "prenom": "string",
+      "nom": "string",
+      "mail": "string",
+      "telephone": "string",
+      "photo": "string",
+      "majeur": "number",
+      "roles": "string[,]",
+      "actif": "string",
+      "discordId": "string",
+      "enviesJours": "string[,]",
+      "commentaireEnviesJours": "string",
+      "nbDeTshirts": "number",
+      "tailleDeTshirts": "string",
+      "alimentation": "string",
+      "équipe": "number",
+      "enviesEquipe": "number[,]",
+      "commentaireEnviesEquipe": "string",
+      "commentContacter": "string",
+      "aideEnAmont": "string",
+      "membrePel": "boolean",
+      "questionsCachees": "number[,]",
+      "creation": "date",
+      "passe1": "string",
+      "passe2": "string",
+      "pushNotifSubscription": "string",
+      "accepteLesNotifs": "string",
+      "OK": "number[;]",
+      "Bof": "number[;]",
+      "Niet": "number[;]",
+      "besoinHébergement": "boolean",
+      "nombreHébergés": "number",
+      "distanceAuFestival": "number",
+      "commentaireHébergement": "string",
+      "repas": "string[;]"
+    }
+  }
+}
+
+
